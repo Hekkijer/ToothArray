@@ -19,7 +19,7 @@ public class ToothArray {
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите число месяца (0 - декабрь, 11 - февраль)");
+        System.out.println("Введите число месяца (0 - январь, 11 - декабрь)");
         int userMonth = scanner.nextInt();
         System.out.println("Введите число дня месяца (0 - первый день месяца)");
         int userDay = scanner.nextInt();
@@ -35,7 +35,7 @@ public class ToothArray {
             // Winter
             if (i == 0 || i == 1 || i == 2) {
                 for (int in = 0; in < year[i].length; in++) {
-                    year[i][in] = -random.nextInt(30 - 10) + 10;
+                    year[i][in] = -(random.nextInt(30 - 10) + 10);
                 }
                 
             }
